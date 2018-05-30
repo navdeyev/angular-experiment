@@ -1,18 +1,23 @@
 import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 
-import { userList } from 'src/app/domains/testMock';
 import {User} from 'src/app/domains/types';
+
+export interface UserGetter {
+  getUsers(): Observable<Array<User>>;
+}
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class UserService implements UserGetter {
 
-  constructor() {
+  constructor(private http: HttpClient) {
   }
 
-  public getUsers(): Array<User> {
-    return userList;
+  public getUsers(): Observable<Array<User>> {
+    return this.http.get<Array<User>>('https://jsonplaceholder.typicode.com/users');
   }
 
 }

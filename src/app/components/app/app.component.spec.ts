@@ -1,8 +1,10 @@
 import {async, TestBed} from '@angular/core/testing';
-import {AppComponent} from './app.component';
+import {HttpClientModule} from '@angular/common/http';
 
 import {UserInfoComponent} from 'src/app/components/user-info/user-info.component';
 import {UserListComponent} from 'src/app/components/user-list/user-list.component';
+
+import {AppComponent} from './app.component';
 
 describe('AppComponent', () => {
 
@@ -12,6 +14,9 @@ describe('AppComponent', () => {
         AppComponent,
         UserInfoComponent,
         UserListComponent
+      ],
+      imports: [
+        HttpClientModule
       ],
     }).compileComponents();
   }));
