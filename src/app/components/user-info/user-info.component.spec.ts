@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {User} from 'src/app/types';
-import {user as userMock} from 'src/app/testMock';
+import {User} from 'src/app/domains/types';
+import {user as userMock} from 'src/app/domains/testMock';
 
 import {UserInfoComponent} from './user-info.component';
 
@@ -32,7 +32,6 @@ describe('UserInfoComponent', () => {
   });
 
   it('should create', () => {
-    console.log('testHost', testHost);
     expect(testHost).toBeTruthy();
   });
 

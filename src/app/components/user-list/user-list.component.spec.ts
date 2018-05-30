@@ -1,7 +1,8 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
+import {UserInfoComponent} from 'src/app/components/user-info/user-info.component';
+
 import {UserListComponent} from './user-list.component';
-import {UserInfoComponent} from '../user-info/user-info.component';
 
 describe('UserListComponent', () => {
   let component: UserListComponent;
@@ -23,4 +24,5 @@ describe('UserListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });

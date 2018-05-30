@@ -1,7 +1,8 @@
 import {async, TestBed} from '@angular/core/testing';
 import {AppComponent} from './app.component';
-import {UserInfoComponent} from './user-info/user-info.component';
-import {UserListComponent} from './user-list/user-list.component';
+
+import {UserInfoComponent} from 'src/app/components/user-info/user-info.component';
+import {UserListComponent} from 'src/app/components/user-list/user-list.component';
 
 describe('AppComponent', () => {
 

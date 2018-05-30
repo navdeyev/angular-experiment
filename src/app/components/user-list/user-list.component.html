@@ -1,0 +1,5 @@
+<ul class="app-user-list">
+  <li *ngFor="let user of userList; let i = index;" [attr.data-role]="'user-list-item-' + i">
+    <app-user-info [user]="user"></app-user-info>
+  </li>
+</ul>
