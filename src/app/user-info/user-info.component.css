@@ -1,0 +1,16 @@
+ul.app-user-info {
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+ul.app-user-info > li {
+  padding: 4px;
+}
+
+.bold {
+  font-weight: bold;
+  margin-right: 5px;
+}
