@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 
-import {User} from 'src/app/types';
+import {User} from 'src/app/domains/types';
 
 @Component({
   selector: 'app-user-info',
