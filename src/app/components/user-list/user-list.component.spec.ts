@@ -1,6 +1,8 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {UserInfoComponent} from 'src/app/components/user-info/user-info.component';
+import {UserServiceMock} from 'src/app/domains/users/user.service.mock';
+import {UserService} from 'src/app/domains/users/user.service';
 
 import {UserListComponent} from './user-list.component';
 
@@ -10,8 +12,15 @@ describe('UserListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [UserInfoComponent, UserListComponent]
+      declarations: [UserInfoComponent, UserListComponent],
     })
+      .overrideComponent(UserListComponent, {
+        set: {
+          providers: [
+            {provide: UserService, useClass: UserServiceMock}
+          ]
+        }
+      })
       .compileComponents();
   }));
 
