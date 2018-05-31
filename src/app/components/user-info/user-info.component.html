@@ -3,5 +3,10 @@
   <li><span class="bold">Name:</span>{{ user.name }}</li>
   <li><span class="bold">Email:</span>{{ user.email }}</li>
   <li><span class="bold">Phone:</span>{{ user.phone }}</li>
-  <li><span class="bold">Website:</span>{{ user.website }}</li>
+  <li>
+    <span class="bold">Website:</span>
+    <a href="{{ user.website }}" target="_blank" data-role="app-user-info-website">
+      {{ user.website }}
+    </a>
+  </li>
 </ul>

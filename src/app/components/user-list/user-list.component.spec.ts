@@ -1,10 +1,19 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {Observable, of} from 'rxjs';
 
-import {UserInfoComponent} from 'src/app/components/user-info/user-info.component';
-import {UserServiceMock} from 'src/app/domains/users/user.service.mock';
 import {UserService} from 'src/app/domains/users/user.service';
+import {UserGetter} from 'src/app/domains/users/user.service';
+import {userList} from 'src/app/domains/testMock';
+import {User} from 'src/app/domains/types';
+import {UserInfoComponent} from 'src/app/components/user-info/user-info.component';
 
 import {UserListComponent} from './user-list.component';
+
+export class UserServiceMock implements UserGetter {
+  public getUsers(): Observable<Array<User>> {
+    return of(userList);
+  }
+}
 
 describe('UserListComponent', () => {
   let component: UserListComponent;
