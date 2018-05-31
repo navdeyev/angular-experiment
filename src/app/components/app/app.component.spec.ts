@@ -5,6 +5,7 @@ import {APP_BASE_HREF} from '@angular/common';
 import {AppRoutingModule} from 'src/app/app-routing.module';
 import {UserInfoComponent} from 'src/app/components/user-info/user-info.component';
 import {UserListComponent} from 'src/app/components/user-list/user-list.component';
+import {DetailedUserInfoComponent} from 'src/app/components/detailed-user-info/detailed-user-info.component';
 
 import {AppComponent} from './app.component';
 
@@ -15,7 +16,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         UserInfoComponent,
-        UserListComponent
+        UserListComponent,
+        DetailedUserInfoComponent
       ],
       imports: [
         HttpClientModule,

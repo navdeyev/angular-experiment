@@ -12,7 +12,8 @@ export class UserListComponent implements OnInit {
 
   protected userList: Array<User>;
 
-  constructor(private userService: UserService) {
+  constructor(
+    private userService: UserService) {
   }
 
   ngOnInit(): void {
