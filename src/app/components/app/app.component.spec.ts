@@ -1,6 +1,8 @@
 import {async, TestBed} from '@angular/core/testing';
 import {HttpClientModule} from '@angular/common/http';
+import {APP_BASE_HREF} from '@angular/common';
 
+import {AppRoutingModule} from 'src/app/app-routing.module';
 import {UserInfoComponent} from 'src/app/components/user-info/user-info.component';
 import {UserListComponent} from 'src/app/components/user-list/user-list.component';
 
@@ -16,8 +18,10 @@ describe('AppComponent', () => {
         UserListComponent
       ],
       imports: [
-        HttpClientModule
+        HttpClientModule,
+        AppRoutingModule
       ],
+      providers: [{provide: APP_BASE_HREF, useValue: '/'}]
     }).compileComponents();
   }));
 
