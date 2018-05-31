@@ -11,3 +11,33 @@ ul.app-user-list > li {
 ul.app-user-list > li:last-child {
   padding-bottom: 0;
 }
+
+.user-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-info-link-wrapper {
+  display: flex;
+  flex: 0 0 60px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-info-link-wrapper > a {
+  height: 80%;
+  width: 30px;
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  text-decoration: none;
+  background-color: #ddd;
+  border: 1px solid #666;
+  justify-content: center;
+}
