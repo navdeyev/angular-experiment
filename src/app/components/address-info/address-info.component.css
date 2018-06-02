@@ -1,0 +1,9 @@
+ul.address-info {
+  padding: 4px;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+ul.address-info > li {
+  padding: 0 4px;
+}

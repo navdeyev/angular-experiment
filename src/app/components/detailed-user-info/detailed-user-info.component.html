@@ -1,6 +1,8 @@
 <div class="detailed-user-info">
   <div *ngIf="user">
-    <div class="user-summary">Summary:</div>
+    <h2 class="subHeader">Summary:</h2>
     <app-user-info [user]="user"></app-user-info>
+    <h2 class="subHeader">Address:</h2>
+    <app-address-info [address]="user.address"></app-address-info>
   </div>
 </div>
