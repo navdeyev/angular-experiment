@@ -1,9 +1,3 @@
-ul.app-user-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 ul.app-user-list > li {
   padding-bottom: 4px;
 }

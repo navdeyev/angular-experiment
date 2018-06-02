@@ -9,7 +9,7 @@ import {User} from 'src/app/domains/types';
 })
 export class UserInfoComponent {
 
-  @Input() public user: User;
+  @Input() protected user: User;
 
   constructor() {
   }

@@ -4,6 +4,7 @@ import {ActivatedRoute} from '@angular/router';
 import {UserInfoComponent} from 'src/app/components/user-info/user-info.component';
 import {UserService} from 'src/app/domains/users/user.service';
 import {UserServiceMock} from 'src/app/domains/users/user.service.mock';
+import {AddressInfoComponent} from 'src/app/components/address-info/address-info.component';
 
 import {DetailedUserInfoComponent} from './detailed-user-info.component';
 
@@ -13,7 +14,7 @@ describe('DetailedUserInfoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [UserInfoComponent, DetailedUserInfoComponent],
+      declarations: [AddressInfoComponent, UserInfoComponent, DetailedUserInfoComponent],
     })
       .overrideComponent(DetailedUserInfoComponent, {
         set: {

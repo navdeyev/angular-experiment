@@ -7,13 +7,15 @@ import {UserInfoComponent} from './components/user-info/user-info.component';
 import {UserListComponent} from './components/user-list/user-list.component';
 import { DetailedUserInfoComponent } from './components/detailed-user-info/detailed-user-info.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AddressInfoComponent } from './components/address-info/address-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserInfoComponent,
     UserListComponent,
-    DetailedUserInfoComponent
+    DetailedUserInfoComponent,
+    AddressInfoComponent
   ],
   imports: [
     BrowserModule,
